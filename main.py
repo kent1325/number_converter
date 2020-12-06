@@ -1,12 +1,15 @@
 def int_to_bin_converter(value):
+    """Placeholder for my own binary converter"""
     return f"{value:08b}"
 
 
 def int_to_float_converter(value):
+    """Placeholder for my own float converter"""
     return float(value)
 
 
 def int_to_roman_converter(value):
+    """Integer to roman converter"""
     num = [1, 4, 5, 9, 10, 40, 50, 90,
            100, 400, 500, 900, 1000]
     sym = ["I", "IV", "V", "IX", "X", "XL", "L", "XC",
@@ -28,6 +31,7 @@ def int_to_roman_converter(value):
 
 
 def roman_to_int_converter(value):
+    """Roman to integer converter"""
     rom_val = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     int_val = 0
     for i in range(len(value)):
@@ -38,6 +42,7 @@ def roman_to_int_converter(value):
     return int_val
 
 
+"""Main Converter Code"""
 user_input = int(input("Choose a number between 1 and 3."
                        "\n\t(1) to access the binary converter"
                        "\n\t(2) to access the float converter"
@@ -55,8 +60,8 @@ if isinstance(user_input, int):
                   f"{int_to_roman_converter(numb_to_convert)}")
         elif user_input == 2:
             numb_to_convert = input("Please enter a roman number you want to convert: ")
-            print(f"You chose roman number {numb_to_convert} which is "
-                  f"{roman_to_int_converter(numb_to_convert)}")
+            print(f"You chose roman number {numb_to_convert.upper()} which is "
+                  f"{roman_to_int_converter(numb_to_convert.upper())}")
     else:
         numb_to_convert = int(input("Please enter an integer you want to convert: "))
         if user_input == 1:
