@@ -1,3 +1,10 @@
+"""Koden er udviklet af:
+    Navn: Kent Vugs Nielsen
+    email: kniels18@student.aau.dk
+    Gruppe: A308b
+    Programmet er udviklet selvstændigt og individuelt.
+"""
+
 def int_to_bin_converter(value):
     """Placeholder for my own binary converter"""
     return f"{value:08b}"
